@@ -45,7 +45,14 @@
     <script>
       /* Your JavaScript code goes here */
       $('#grade-it').on('click', function(){
-        // check name of President //
+
+ $('#question-1').removeClass("has-success");
+  $('#question-2').removeClass("has-success");
+   $('#question-3').removeClass("has-success");
+    $('#question-1').removeClass("has-error");
+     $('#question-2').removeClass("has-error");
+      $('#question-3').removeClass("has-error");
+
         var presName = $('#question-1 input').val();
 
         if (presName == 'Donald Trump') {
