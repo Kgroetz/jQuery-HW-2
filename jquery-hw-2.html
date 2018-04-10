@@ -39,6 +39,12 @@
       <div class="form-group">
         <input id="grade-it" type="button" value="Grade my quiz" class="btn btn-primary" />
       </div>
+
+      <div class="form-group">
+        <input id="show-answers" type="button" value="Show me the answers!" class="btn btn-primary" />
+      </div>
+
+
     </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -81,6 +87,14 @@
           $('#question-3').addClass("has-error");;
         }
 
+
+      });
+
+      $('#show-answers').on('click', function(){
+
+        $('#question-1 input').val("Donald Trump");
+        $('#question-2 select').val("answer-1");
+        $('#question-3 select').val("answer-1");
 
       });
 
